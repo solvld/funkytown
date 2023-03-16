@@ -8,10 +8,28 @@
 
   <style>
     body {margin: 0}
+    i { font-size: 50px;
+        color: gainsboro;
+        position: absolute;
+        z-index: 2;
+        top: 40px;
+        left: 40px;
+      }
+    audio {
+      position: absolute;
+    }
   </style>
 </head>
 <body>
+  <i class="fa-solid fa-volume-xmark" id="volume"></i>
   <script src="./src/js/index.js" type="module"></script>
-  <audio src="./src/audio/funky town low quality (256 kbps).mp3" preload="auto" autoplay loop></audio>
+  <audio src="./src/audio/funky town low quality (256 kbps).mp3" 
+    type="audio/mp3" 
+    loop
+    id="audio"
+  >
+  </audio>
+  <script src="./src/js/audio.js"></script>
+  <script src="https://kit.fontawesome.com/5a041bfbcb.js" crossorigin="anonymous"></script>
 </body>
 </html>
